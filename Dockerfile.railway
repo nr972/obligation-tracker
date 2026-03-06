@@ -1,0 +1,17 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+COPY pyproject.toml .
+COPY ot_app/ ot_app/
+COPY ot_frontend/ ot_frontend/
+COPY data/sample/ data/sample/
+COPY railway_start.sh .
+
+RUN pip install --no-cache-dir .
+RUN mkdir -p data/uploads
+RUN chmod +x railway_start.sh
+
+EXPOSE 8000 8501
+
+CMD ["./railway_start.sh"]

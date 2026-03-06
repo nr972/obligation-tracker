@@ -1,0 +1,567 @@
+{
+  "contracts": [
+    {
+      "title": "CloudSync Platform Service Agreement",
+      "counterparty": "Nimbus Technologies Inc.",
+      "contract_type": "saas",
+      "effective_date": "2025-01-15",
+      "expiration_date": "2027-01-14",
+      "renewal_type": "auto",
+      "notice_period_days": 90,
+      "obligations": [
+        {
+          "title": "Monthly SLA performance report",
+          "description": "Provider shall deliver monthly SLA performance reports within 10 business days of each calendar month end, detailing uptime metrics, incident response times, and resolution statistics.",
+          "obligation_type": "reporting",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "monthly",
+          "days_from_now": 25,
+          "penalty": "Failure to deliver reports for two consecutive months entitles Client to 5% service credit.",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Service Level Agreement"
+        },
+        {
+          "title": "99.9% platform uptime guarantee",
+          "description": "Provider guarantees 99.9% platform availability measured on a monthly basis, excluding scheduled maintenance windows.",
+          "obligation_type": "sla",
+          "responsible_party": "counterparty",
+          "deadline_type": "ongoing",
+          "penalty": "For each 0.1% below 99.9%, Client receives a 10% service credit on the monthly fee, up to 30%.",
+          "risk_level": "critical",
+          "status": "pending",
+          "source_section": "Service Level Agreement"
+        },
+        {
+          "title": "Daily data backup",
+          "description": "Provider shall perform daily backups of all Client data and maintain backup copies for a minimum of 30 days.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "weekly",
+          "penalty": "Data loss due to backup failure subjects Provider to liability for direct damages.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Data Protection"
+        },
+        {
+          "title": "Annual security audit",
+          "description": "Provider shall conduct an independent third-party security audit annually and share the SOC 2 Type II report with Client within 30 days of completion.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "annually",
+          "days_from_now": 120,
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Security"
+        },
+        {
+          "title": "Quarterly payment",
+          "description": "Client shall pay the quarterly subscription fee of $45,000 within 30 days of invoice receipt.",
+          "obligation_type": "payment",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "quarterly",
+          "days_from_now": 15,
+          "penalty": "Late payment incurs 1.5% monthly interest on outstanding balance.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Payment Terms"
+        },
+        {
+          "title": "Security breach notification within 72 hours",
+          "description": "Provider shall notify Client of any security breach affecting Client data within 72 hours of discovery.",
+          "obligation_type": "notification",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "penalty": "Failure to provide timely notification constitutes a material breach.",
+          "risk_level": "critical",
+          "status": "pending",
+          "source_section": "Data Protection"
+        }
+      ]
+    },
+    {
+      "title": "IT Infrastructure Support Agreement",
+      "counterparty": "Apex Solutions Group",
+      "contract_type": "vendor",
+      "effective_date": "2025-03-01",
+      "expiration_date": "2026-02-28",
+      "renewal_type": "manual",
+      "notice_period_days": 60,
+      "obligations": [
+        {
+          "title": "Quarterly business review",
+          "description": "Both parties shall participate in quarterly business reviews to assess service delivery, discuss upcoming needs, and review performance metrics.",
+          "obligation_type": "reporting",
+          "responsible_party": "both",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "quarterly",
+          "days_from_now": 45,
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Governance"
+        },
+        {
+          "title": "Maintain $2M liability insurance",
+          "description": "Vendor shall maintain professional liability insurance of no less than $2,000,000 and provide proof of coverage upon request.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "ongoing",
+          "penalty": "Failure to maintain required insurance is grounds for immediate termination.",
+          "risk_level": "high",
+          "status": "completed",
+          "source_section": "Insurance"
+        },
+        {
+          "title": "Background checks on all personnel",
+          "description": "Vendor shall conduct background checks on all personnel assigned to Client facilities or with access to Client systems.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "ongoing",
+          "risk_level": "high",
+          "status": "in_progress",
+          "source_section": "Personnel"
+        },
+        {
+          "title": "Invoice submission net-45",
+          "description": "Vendor shall submit invoices within 15 days of service delivery. Client shall pay within 45 days of invoice receipt.",
+          "obligation_type": "payment",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "monthly",
+          "days_from_now": 30,
+          "penalty": "Late payment incurs 1% monthly interest.",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Payment Terms"
+        },
+        {
+          "title": "Equipment return on termination",
+          "description": "Upon termination, Vendor shall return all Client-provided equipment within 10 business days.",
+          "obligation_type": "delivery",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "penalty": "Client may deduct equipment replacement costs from final payment.",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Termination"
+        }
+      ]
+    },
+    {
+      "title": "Data Processing Addendum",
+      "counterparty": "DataVault Analytics LLC",
+      "contract_type": "dpa",
+      "effective_date": "2025-02-01",
+      "expiration_date": "2027-01-31",
+      "renewal_type": "auto",
+      "notice_period_days": 30,
+      "obligations": [
+        {
+          "title": "DPIA upon request",
+          "description": "Processor shall assist Controller in conducting Data Protection Impact Assessments upon written request, providing all necessary information within 15 business days.",
+          "obligation_type": "data_protection",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Data Protection Impact Assessment"
+        },
+        {
+          "title": "Sub-processor notification (30 days)",
+          "description": "Processor shall provide Controller with 30 days prior written notice before engaging any new sub-processor, including the sub-processor's identity and the processing activities.",
+          "obligation_type": "notification",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "penalty": "Engaging a sub-processor without proper notice constitutes a material breach.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Sub-Processors"
+        },
+        {
+          "title": "Data deletion within 30 days of termination",
+          "description": "Upon termination, Processor shall delete or return all personal data within 30 days and provide written certification of deletion.",
+          "obligation_type": "data_protection",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "penalty": "Failure to delete data subjects Processor to regulatory penalties and indemnification obligations.",
+          "risk_level": "critical",
+          "status": "pending",
+          "source_section": "Termination"
+        },
+        {
+          "title": "Data breach notification within 48 hours",
+          "description": "Processor shall notify Controller of any personal data breach within 48 hours of becoming aware, providing details required under applicable data protection law.",
+          "obligation_type": "notification",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "penalty": "Delayed notification may result in regulatory fines for which Processor shall indemnify Controller.",
+          "risk_level": "critical",
+          "status": "pending",
+          "source_section": "Data Breach"
+        },
+        {
+          "title": "Annual compliance certification",
+          "description": "Processor shall provide annual written certification of compliance with all obligations under this DPA, including technical and organizational measures.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "annually",
+          "days_from_now": 90,
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Compliance"
+        },
+        {
+          "title": "Maintain technical and organizational security measures",
+          "description": "Processor shall implement and maintain appropriate technical and organizational measures to ensure a level of security appropriate to the risk of processing.",
+          "obligation_type": "data_protection",
+          "responsible_party": "counterparty",
+          "deadline_type": "ongoing",
+          "risk_level": "high",
+          "status": "in_progress",
+          "source_section": "Security Measures"
+        }
+      ]
+    },
+    {
+      "title": "Strategic Advisory Services Agreement",
+      "counterparty": "Meridian Consulting Partners",
+      "contract_type": "consulting",
+      "effective_date": "2025-04-01",
+      "expiration_date": "2025-12-31",
+      "renewal_type": "none",
+      "obligations": [
+        {
+          "title": "Monthly deliverable report",
+          "description": "Consultant shall submit a written report of deliverables and progress by the 5th business day of each month.",
+          "obligation_type": "reporting",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "monthly",
+          "days_from_now": 10,
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Deliverables"
+        },
+        {
+          "title": "IP assignment on creation",
+          "description": "All work product created by Consultant in the course of this engagement shall be assigned to Client upon creation as work-made-for-hire.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "ongoing",
+          "penalty": "Failure to assign IP constitutes a material breach.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Intellectual Property"
+        },
+        {
+          "title": "12-month post-termination non-compete",
+          "description": "Consultant shall not provide substantially similar advisory services to Client's direct competitors for 12 months following termination.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Restrictive Covenants"
+        },
+        {
+          "title": "Bi-weekly invoicing",
+          "description": "Consultant shall submit invoices bi-weekly. Client shall pay within 15 business days.",
+          "obligation_type": "payment",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "monthly",
+          "days_from_now": 7,
+          "penalty": "Late payment incurs 1.5% monthly interest.",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Payment Terms"
+        },
+        {
+          "title": "Expense pre-approval over $500",
+          "description": "Any expense exceeding $500 must receive prior written approval from Client's project lead before being incurred.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "ongoing",
+          "risk_level": "low",
+          "status": "pending",
+          "source_section": "Expenses"
+        }
+      ]
+    },
+    {
+      "title": "Enterprise Software License Agreement",
+      "counterparty": "Prism Software Corp.",
+      "contract_type": "license",
+      "effective_date": "2025-01-01",
+      "expiration_date": "2026-12-31",
+      "renewal_type": "auto",
+      "notice_period_days": 60,
+      "obligations": [
+        {
+          "title": "Annual license renewal payment",
+          "description": "Licensee shall pay the annual license fee of $120,000 within 30 days of each anniversary date.",
+          "obligation_type": "payment",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "annually",
+          "days_from_now": 60,
+          "penalty": "Non-payment within 60 days entitles Licensor to suspend access.",
+          "risk_level": "critical",
+          "status": "pending",
+          "source_section": "License Fees"
+        },
+        {
+          "title": "Annual usage audit compliance",
+          "description": "Licensor reserves the right to audit Licensee's usage annually. Licensee shall provide access to usage records within 10 business days of audit request.",
+          "obligation_type": "compliance",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "annually",
+          "days_from_now": 180,
+          "penalty": "Non-compliance may result in license termination.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Audit Rights"
+        },
+        {
+          "title": "Export compliance",
+          "description": "Licensee shall comply with all applicable export control laws and regulations in its use of the software.",
+          "obligation_type": "compliance",
+          "responsible_party": "us",
+          "deadline_type": "ongoing",
+          "penalty": "Violation may result in immediate termination and legal action.",
+          "risk_level": "high",
+          "status": "in_progress",
+          "source_section": "Compliance"
+        },
+        {
+          "title": "Maintain access logs",
+          "description": "Licensee shall maintain access logs for all users of the licensed software for a minimum of 12 months.",
+          "obligation_type": "compliance",
+          "responsible_party": "us",
+          "deadline_type": "ongoing",
+          "risk_level": "medium",
+          "status": "completed",
+          "source_section": "Security"
+        },
+        {
+          "title": "Update to latest version within 90 days",
+          "description": "Licensee shall update to the latest supported version of the software within 90 days of release notification.",
+          "obligation_type": "compliance",
+          "responsible_party": "us",
+          "deadline_type": "event_triggered",
+          "penalty": "Running unsupported versions voids the support warranty.",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Maintenance"
+        }
+      ]
+    },
+    {
+      "title": "Professional Services MSA",
+      "counterparty": "Horizon Digital Services",
+      "contract_type": "msa",
+      "effective_date": "2025-02-15",
+      "expiration_date": "2027-02-14",
+      "renewal_type": "auto",
+      "notice_period_days": 90,
+      "obligations": [
+        {
+          "title": "SOW sign-off within 10 business days",
+          "description": "Client shall review and approve or reject each Statement of Work within 10 business days of receipt.",
+          "obligation_type": "delivery",
+          "responsible_party": "us",
+          "deadline_type": "event_triggered",
+          "penalty": "Deemed approved if no response within 10 business days.",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Statements of Work"
+        },
+        {
+          "title": "Change order process compliance",
+          "description": "Any changes to scope, timeline, or fees must follow the formal change order process with written approval from both parties.",
+          "obligation_type": "compliance",
+          "responsible_party": "both",
+          "deadline_type": "ongoing",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Change Management"
+        },
+        {
+          "title": "Acceptance testing within 15 days",
+          "description": "Client shall complete acceptance testing of each deliverable within 15 business days of delivery. Failure to respond constitutes acceptance.",
+          "obligation_type": "delivery",
+          "responsible_party": "us",
+          "deadline_type": "event_triggered",
+          "days_from_now": 20,
+          "risk_level": "medium",
+          "status": "in_progress",
+          "source_section": "Acceptance"
+        },
+        {
+          "title": "Payment net-30",
+          "description": "Client shall pay all undisputed invoices within 30 days of receipt.",
+          "obligation_type": "payment",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "monthly",
+          "days_from_now": 18,
+          "penalty": "Late payment incurs 1% monthly interest.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Payment Terms"
+        },
+        {
+          "title": "Maintain NDA compliance",
+          "description": "Both parties shall maintain confidentiality of all proprietary information exchanged under this MSA in accordance with the mutual NDA executed between the parties.",
+          "obligation_type": "confidentiality",
+          "responsible_party": "both",
+          "deadline_type": "ongoing",
+          "penalty": "Breach of confidentiality subjects the breaching party to injunctive relief and damages.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Confidentiality"
+        }
+      ]
+    },
+    {
+      "title": "Independent Contractor Agreement",
+      "counterparty": "Jordan Chen",
+      "contract_type": "contractor",
+      "effective_date": "2025-05-01",
+      "expiration_date": "2025-10-31",
+      "renewal_type": "none",
+      "obligations": [
+        {
+          "title": "Weekly time reports",
+          "description": "Contractor shall submit weekly time reports by end of day each Friday, detailing hours worked and tasks completed.",
+          "obligation_type": "reporting",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "weekly",
+          "days_from_now": 3,
+          "risk_level": "low",
+          "status": "pending",
+          "source_section": "Reporting"
+        },
+        {
+          "title": "Deliverables per SOW milestones",
+          "description": "Contractor shall deliver all work product according to the milestone schedule in the attached SOW.",
+          "obligation_type": "delivery",
+          "responsible_party": "counterparty",
+          "deadline_type": "fixed",
+          "days_from_now": 35,
+          "penalty": "Missed milestones may result in payment withholding for affected deliverables.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Deliverables"
+        },
+        {
+          "title": "Equipment return on termination",
+          "description": "Contractor shall return all Company equipment within 5 business days of engagement termination.",
+          "obligation_type": "delivery",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Termination"
+        },
+        {
+          "title": "6-month non-solicitation",
+          "description": "Contractor shall not solicit any Company employees or contractors for 6 months following termination.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Restrictive Covenants"
+        },
+        {
+          "title": "Annual tax documentation (W-9)",
+          "description": "Contractor shall provide updated W-9 form annually and as needed for tax reporting purposes.",
+          "obligation_type": "compliance",
+          "responsible_party": "counterparty",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "annually",
+          "days_from_now": 60,
+          "risk_level": "low",
+          "status": "completed",
+          "source_section": "Tax"
+        }
+      ]
+    },
+    {
+      "title": "Office Space Sublease Agreement",
+      "counterparty": "Sterling Properties Ltd.",
+      "contract_type": "lease",
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-12-31",
+      "renewal_type": "manual",
+      "notice_period_days": 90,
+      "obligations": [
+        {
+          "title": "Monthly rent payment by 1st",
+          "description": "Tenant shall pay monthly rent of $8,500 by the 1st of each month. Rent received after the 5th is subject to a late fee.",
+          "obligation_type": "payment",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "monthly",
+          "days_from_now": 12,
+          "penalty": "Late fee of $250 plus 5% of monthly rent for each day beyond the 5th.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Rent"
+        },
+        {
+          "title": "Annual insurance proof",
+          "description": "Tenant shall provide proof of renter's insurance with minimum $1,000,000 liability coverage within 30 days of lease commencement and upon each annual renewal.",
+          "obligation_type": "compliance",
+          "responsible_party": "us",
+          "deadline_type": "recurring",
+          "recurrence_pattern": "annually",
+          "days_from_now": -5,
+          "penalty": "Failure to maintain insurance is grounds for lease termination.",
+          "risk_level": "high",
+          "status": "overdue",
+          "source_section": "Insurance"
+        },
+        {
+          "title": "Maintenance request response within 48 hours",
+          "description": "Landlord shall respond to all maintenance requests within 48 hours and complete non-emergency repairs within 10 business days.",
+          "obligation_type": "sla",
+          "responsible_party": "counterparty",
+          "deadline_type": "event_triggered",
+          "risk_level": "medium",
+          "status": "pending",
+          "source_section": "Maintenance"
+        },
+        {
+          "title": "Comply with building rules and regulations",
+          "description": "Tenant shall comply with all building rules, regulations, and applicable local ordinances regarding use of the premises.",
+          "obligation_type": "compliance",
+          "responsible_party": "us",
+          "deadline_type": "ongoing",
+          "risk_level": "low",
+          "status": "pending",
+          "source_section": "Use of Premises"
+        },
+        {
+          "title": "90-day termination notice",
+          "description": "Either party must provide 90 days written notice of intent to terminate or not renew the lease.",
+          "obligation_type": "notification",
+          "responsible_party": "both",
+          "deadline_type": "event_triggered",
+          "penalty": "Failure to provide timely notice results in automatic 12-month renewal.",
+          "risk_level": "high",
+          "status": "pending",
+          "source_section": "Termination"
+        }
+      ]
+    }
+  ]
+}

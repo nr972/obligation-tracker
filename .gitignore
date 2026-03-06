@@ -27,5 +27,14 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Data (real contract data should never be committed)
+# Data (real contract data and databases should never be committed)
 data/real/
+data/*.db
+data/uploads/
+
+# Package naming doc (internal build context)
+PACKAGE_NAMING.md
+
+# Test / build artifacts
+.pytest_cache/
+htmlcov/
